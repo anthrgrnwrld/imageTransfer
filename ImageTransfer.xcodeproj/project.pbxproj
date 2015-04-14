@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		365E3DAF1ADD677F0034B933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365E3DAE1ADD677F0034B933 /* AppDelegate.swift */; };
+		365E3DB11ADD677F0034B933 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365E3DB01ADD677F0034B933 /* ViewController.swift */; };
+		365E3DB41ADD67800034B933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365E3DB21ADD67800034B933 /* Main.storyboard */; };
+		365E3DB61ADD67800034B933 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365E3DB51ADD67800034B933 /* Images.xcassets */; };
+		365E3DB91ADD67800034B933 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 365E3DB71ADD67800034B933 /* LaunchScreen.xib */; };
+		365E3DC51ADD67800034B933 /* ImageTransferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365E3DC41ADD67800034B933 /* ImageTransferTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		365E3DBF1ADD67800034B933 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 365E3DA11ADD677F0034B933 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 365E3DA81ADD677F0034B933;
+			remoteInfo = ImageTransfer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		365E3DA91ADD677F0034B933 /* ImageTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		365E3DAD1ADD677F0034B933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		365E3DAE1ADD677F0034B933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		365E3DB01ADD677F0034B933 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		365E3DB31ADD67800034B933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		365E3DB51ADD67800034B933 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		365E3DB81ADD67800034B933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		365E3DBE1ADD67800034B933 /* ImageTransferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageTransferTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		365E3DC31ADD67800034B933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		365E3DC41ADD67800034B933 /* ImageTransferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransferTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		365E3DA61ADD677F0034B933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		365E3DBB1ADD67800034B933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		365E3DA01ADD677F0034B933 = {
+			isa = PBXGroup;
+			children = (
+				365E3DAB1ADD677F0034B933 /* ImageTransfer */,
+				365E3DC11ADD67800034B933 /* ImageTransferTests */,
+				365E3DAA1ADD677F0034B933 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		365E3DAA1ADD677F0034B933 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				365E3DA91ADD677F0034B933 /* ImageTransfer.app */,
+				365E3DBE1ADD67800034B933 /* ImageTransferTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		365E3DAB1ADD677F0034B933 /* ImageTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				365E3DAE1ADD677F0034B933 /* AppDelegate.swift */,
+				365E3DB01ADD677F0034B933 /* ViewController.swift */,
+				365E3DB21ADD67800034B933 /* Main.storyboard */,
+				365E3DB51ADD67800034B933 /* Images.xcassets */,
+				365E3DB71ADD67800034B933 /* LaunchScreen.xib */,
+				365E3DAC1ADD677F0034B933 /* Supporting Files */,
+			);
+			path = ImageTransfer;
+			sourceTree = "<group>";
+		};
+		365E3DAC1ADD677F0034B933 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				365E3DAD1ADD677F0034B933 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		365E3DC11ADD67800034B933 /* ImageTransferTests */ = {
+			isa = PBXGroup;
+			children = (
+				365E3DC41ADD67800034B933 /* ImageTransferTests.swift */,
+				365E3DC21ADD67800034B933 /* Supporting Files */,
+			);
+			path = ImageTransferTests;
+			sourceTree = "<group>";
+		};
+		365E3DC21ADD67800034B933 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				365E3DC31ADD67800034B933 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		365E3DA81ADD677F0034B933 /* ImageTransfer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 365E3DC81ADD67800034B933 /* Build configuration list for PBXNativeTarget "ImageTransfer" */;
+			buildPhases = (
+				365E3DA51ADD677F0034B933 /* Sources */,
+				365E3DA61ADD677F0034B933 /* Frameworks */,
+				365E3DA71ADD677F0034B933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageTransfer;
+			productName = ImageTransfer;
+			productReference = 365E3DA91ADD677F0034B933 /* ImageTransfer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		365E3DBD1ADD67800034B933 /* ImageTransferTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 365E3DCB1ADD67800034B933 /* Build configuration list for PBXNativeTarget "ImageTransferTests" */;
+			buildPhases = (
+				365E3DBA1ADD67800034B933 /* Sources */,
+				365E3DBB1ADD67800034B933 /* Frameworks */,
+				365E3DBC1ADD67800034B933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				365E3DC01ADD67800034B933 /* PBXTargetDependency */,
+			);
+			name = ImageTransferTests;
+			productName = ImageTransferTests;
+			productReference = 365E3DBE1ADD67800034B933 /* ImageTransferTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		365E3DA11ADD677F0034B933 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Masaki Horimoto";
+				TargetAttributes = {
+					365E3DA81ADD677F0034B933 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					365E3DBD1ADD67800034B933 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 365E3DA81ADD677F0034B933;
+					};
+				};
+			};
+			buildConfigurationList = 365E3DA41ADD677F0034B933 /* Build configuration list for PBXProject "ImageTransfer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 365E3DA01ADD677F0034B933;
+			productRefGroup = 365E3DAA1ADD677F0034B933 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				365E3DA81ADD677F0034B933 /* ImageTransfer */,
+				365E3DBD1ADD67800034B933 /* ImageTransferTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		365E3DA71ADD677F0034B933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				365E3DB41ADD67800034B933 /* Main.storyboard in Resources */,
+				365E3DB91ADD67800034B933 /* LaunchScreen.xib in Resources */,
+				365E3DB61ADD67800034B933 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		365E3DBC1ADD67800034B933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		365E3DA51ADD677F0034B933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				365E3DB11ADD677F0034B933 /* ViewController.swift in Sources */,
+				365E3DAF1ADD677F0034B933 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		365E3DBA1ADD67800034B933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				365E3DC51ADD67800034B933 /* ImageTransferTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		365E3DC01ADD67800034B933 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 365E3DA81ADD677F0034B933 /* ImageTransfer */;
+			targetProxy = 365E3DBF1ADD67800034B933 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		365E3DB21ADD67800034B933 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				365E3DB31ADD67800034B933 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		365E3DB71ADD67800034B933 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				365E3DB81ADD67800034B933 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		365E3DC61ADD67800034B933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		365E3DC71ADD67800034B933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		365E3DC91ADD67800034B933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ImageTransfer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		365E3DCA1ADD67800034B933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ImageTransfer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		365E3DCC1ADD67800034B933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ImageTransferTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageTransfer.app/ImageTransfer";
+			};
+			name = Debug;
+		};
+		365E3DCD1ADD67800034B933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ImageTransferTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageTransfer.app/ImageTransfer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		365E3DA41ADD677F0034B933 /* Build configuration list for PBXProject "ImageTransfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				365E3DC61ADD67800034B933 /* Debug */,
+				365E3DC71ADD67800034B933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		365E3DC81ADD67800034B933 /* Build configuration list for PBXNativeTarget "ImageTransfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				365E3DC91ADD67800034B933 /* Debug */,
+				365E3DCA1ADD67800034B933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		365E3DCB1ADD67800034B933 /* Build configuration list for PBXNativeTarget "ImageTransferTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				365E3DCC1ADD67800034B933 /* Debug */,
+				365E3DCD1ADD67800034B933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 365E3DA11ADD677F0034B933 /* Project object */;
+}
