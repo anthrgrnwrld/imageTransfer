@@ -9,10 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet var imageBeHereNow: UIImageView!
+    @IBOutlet var imageDestinationArea: UIImageView!
+    @IBOutlet var imageSourceArea: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        imageDestinationArea.backgroundColor = UIColor.yellowColor()
+        imageSourceArea.backgroundColor = UIColor.orangeColor()
+        imageBeHereNow.image = UIImage(named: "BeHereNow.jpg")
     }
 
     override func didReceiveMemoryWarning() {
