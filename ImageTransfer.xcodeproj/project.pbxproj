@@ -14,6 +14,7 @@
 		365E3DB91ADD67800034B933 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 365E3DB71ADD67800034B933 /* LaunchScreen.xib */; };
 		365E3DC51ADD67800034B933 /* ImageTransferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365E3DC41ADD67800034B933 /* ImageTransferTests.swift */; };
 		365E3DD31ADD6B590034B933 /* BeHereNow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 365E3DD21ADD6B590034B933 /* BeHereNow.jpg */; };
+		365E3DD61ADF26B50034B933 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365E3DD41ADF26510034B933 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		365E3DC31ADD67800034B933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		365E3DC41ADD67800034B933 /* ImageTransferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransferTests.swift; sourceTree = "<group>"; };
 		365E3DD21ADD6B590034B933 /* BeHereNow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BeHereNow.jpg; sourceTree = "<group>"; };
+		365E3DD41ADF26510034B933 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				365E3DD61ADF26B50034B933 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,7 @@
 		365E3DA01ADD677F0034B933 = {
 			isa = PBXGroup;
 			children = (
+				365E3DD41ADF26510034B933 /* QuartzCore.framework */,
 				365E3DAB1ADD677F0034B933 /* ImageTransfer */,
 				365E3DC11ADD67800034B933 /* ImageTransferTests */,
 				365E3DAA1ADD677F0034B933 /* Products */,
@@ -413,6 +417,7 @@
 				365E3DCA1ADD67800034B933 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		365E3DCB1ADD67800034B933 /* Build configuration list for PBXNativeTarget "ImageTransferTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				365E3DCD1ADD67800034B933 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
