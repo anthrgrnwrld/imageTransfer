@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F211E1AA-4514-4BCC-9043-7B708DB62BAF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ImageTransfer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E73A458759FC9387FDFA9B80DB00B12BD87C695F</key>
+		<string>https://github.com/anthrgrnwrld/imageTransfer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ImageTransfer.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E73A458759FC9387FDFA9B80DB00B12BD87C695F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/anthrgrnwrld/imageTransfer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E73A458759FC9387FDFA9B80DB00B12BD87C695F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E73A458759FC9387FDFA9B80DB00B12BD87C695F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ImageTransfer</string>
+		</dict>
+	</array>
+</dict>
+</plist>

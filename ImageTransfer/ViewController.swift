@@ -84,17 +84,21 @@ class ViewController: UIViewController {
         if distanceXFromDestination < threshold && distanceYFromDestination < threshold {
             // アニメーションで目標Areaに吸着させる
             println("perform animation to imageDestinationArea")
-            let positonAnimation: CABasicAnimation = CABasicAnimation(keyPath: "position")
-            let fromPoint: CGPoint = imageBeHereNow.center
-            let toPoint: CGPoint = imageDestinationArea.center
-            positonAnimation.fromValue = NSValue(CGPoint: fromPoint)    // アニメーションのスタート座標
-            positonAnimation.toValue = NSValue(CGPoint: toPoint)        // アニメーションの終了位置
-            positonAnimation.repeatCount = 1                            // アニメーションの繰り返し回数
-            positonAnimation.duration = 0.01                            // アニメーション時間
-            //positonAnimation.beginTime = CACurrentMediaTime() + 0     // アニメーションの開始時間を指定
-            imageBeHereNow.layer.addAnimation(positonAnimation, forKey: "move-layer")   // アニメーション実行
             
-            imageBeHereNow.center = imageDestinationArea.center         // イメージを移動
+            imageBeHereNow.layer.position = imageDestinationArea.center
+            
+//          他のアニメーション方法の検討残骸
+//            let positonAnimation: CABasicAnimation = CABasicAnimation(keyPath: "position")
+//            let fromPoint: CGPoint = imageBeHereNow.center
+//            let toPoint: CGPoint = imageDestinationArea.center
+//            positonAnimation.fromValue = NSValue(CGPoint: fromPoint)    // アニメーションのスタート座標
+//            positonAnimation.toValue = NSValue(CGPoint: toPoint)        // アニメーションの終了位置
+//            positonAnimation.repeatCount = 1                            // アニメーションの繰り返し回数
+//            positonAnimation.duration = 0.01                            // アニメーション時間
+//            positonAnimation.beginTime = CACurrentMediaTime() + 0     // アニメーションの開始時間を指定
+//            imageBeHereNow.layer.addAnimation(positonAnimation, forKey: "move-layer")   // アニメーション実行
+//            
+//            imageBeHereNow.center = imageDestinationArea.center         // イメージを移動*/
 
         } else {
             // Do nothing
@@ -102,6 +106,7 @@ class ViewController: UIViewController {
             println("perform animation to imageSourceArea")
         }
         
+
         
     }
     
