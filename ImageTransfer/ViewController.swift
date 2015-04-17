@@ -76,16 +76,26 @@ class ViewController: UIViewController {
     
     override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         // タッチ終了時の画像の座標と目標Areaの座標の距離を求める
-        let distanceXFromDestination = fabs(imageBeHereNow.frame.origin.x
- - imageDestinationArea.frame.origin.x)
-        let distanceYFromDestination = fabs(imageBeHereNow.frame.origin.y
-            - imageDestinationArea.frame.origin.y)
+        let distanceXFromDestination = fabs(imageBeHereNow.frame.origin.x - imageDestinationArea.frame.origin.x)
+        let distanceYFromDestination = fabs(imageBeHereNow.frame.origin.y - imageDestinationArea.frame.origin.y)
         
-        let threshold: CGFloat = 10
+        let threshold: CGFloat = 50
         
         if distanceXFromDestination < threshold && distanceYFromDestination < threshold {
             // アニメーションで目標Areaに吸着させる
             println("perform animation to imageDestinationArea")
+            let positonAnimation: CABasicAnimation = CABasicAnimation(keyPath: "position")
+            let fromPoint: CGPoint = imageBeHereNow.center
+            let toPoint: CGPoint = imageDestinationArea.center
+            positonAnimation.fromValue = NSValue(CGPoint: fromPoint)    // アニメーションのスタート座標
+            positonAnimation.toValue = NSValue(CGPoint: toPoint)        // アニメーションの終了位置
+            positonAnimation.repeatCount = 1                            // アニメーションの繰り返し回数
+            positonAnimation.duration = 0.01                            // アニメーション時間
+            //positonAnimation.beginTime = CACurrentMediaTime() + 0     // アニメーションの開始時間を指定
+            imageBeHereNow.layer.addAnimation(positonAnimation, forKey: "move-layer")   // アニメーション実行
+            
+            imageBeHereNow.center = imageDestinationArea.center         // イメージを移動
+
         } else {
             // Do nothing
             // アニメーションでスタートAreaに吸着させる
