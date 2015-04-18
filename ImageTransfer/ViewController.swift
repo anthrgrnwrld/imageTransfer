@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var imageBeHereNow: UIImageView!
     @IBOutlet var imageDestinationArea: UIImageView!    // 目標Area
-    @IBOutlet var imageSourceArea: UIImageView!         // スタートArea
+    @IBOutlet var imageSourceArea: UIImageView!         // 開始Area
     var startPoint: CGPoint?
     var imageBeHereNowPoint: CGPoint?
     var isImageInside: Bool?
@@ -41,8 +41,8 @@ class ViewController: UIViewController {
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         let touch: UITouch = touches.first as! UITouch
         
-        startPoint = touch.locationInView(self.view) // タッチのスタート座標を取得
-        imageBeHereNowPoint = imageBeHereNow.frame.origin // スタート時の画像の座標を取得
+        startPoint = touch.locationInView(self.view) // タッチの開始座標を取得
+        imageBeHereNowPoint = imageBeHereNow.frame.origin // 開始時の画像の座標を取得
  
         // タップしたビューがUIImageViewか判断する。
         if touch.view.isKindOfClass(UIImageView) {
@@ -97,7 +97,7 @@ class ViewController: UIViewController {
             imageBeHereNow.center = imageDestinationArea.center         // イメージを移動
 
         } else {
-            // アニメーションでスタートAreaに吸着させる
+            // アニメーションで開始Areaに吸着させる
             println("perform animation to imageSourceArea")
             imageBeHereNow.layer.opacity = 1.0
 
@@ -112,7 +112,7 @@ class ViewController: UIViewController {
     
     func positonAnimationFromPoint(fromPoint: CGPoint!, toPoint: CGPoint!) {
         let positonAnimation: CABasicAnimation = CABasicAnimation(keyPath: "position")
-        positonAnimation.fromValue = NSValue(CGPoint: fromPoint)    // アニメーションのスタート座標
+        positonAnimation.fromValue = NSValue(CGPoint: fromPoint)    // アニメーションの開始座標
         positonAnimation.toValue = NSValue(CGPoint: toPoint)        // アニメーションの終了位置
         positonAnimation.repeatCount = 1                            // アニメーションの繰り返し回数
         positonAnimation.duration = 0.1                             // アニメーション時間
