@@ -63,6 +63,9 @@ class ViewController: UIViewController {
             // 移動量を計算
             let deltaX: CGFloat = CGFloat(location.x - startPoint!.x)
             let deltaY: CGFloat = CGFloat(location.y - startPoint!.y)
+  
+            // イメージを半透過にする
+            imageBeHereNow.layer.opacity = 0.5
             
             // イメージを移動
             self.imageBeHereNow.frame.origin.x = imageBeHereNowPoint!.x + deltaX
@@ -79,36 +82,45 @@ class ViewController: UIViewController {
         let distanceXFromDestination = fabs(imageBeHereNow.frame.origin.x - imageDestinationArea.frame.origin.x)
         let distanceYFromDestination = fabs(imageBeHereNow.frame.origin.y - imageDestinationArea.frame.origin.y)
         
-        let threshold: CGFloat = 50
+        let threshold: CGFloat = 100
         
         if distanceXFromDestination < threshold && distanceYFromDestination < threshold {
             // アニメーションで目標Areaに吸着させる
             println("perform animation to imageDestinationArea")
+
+            imageBeHereNow.layer.opacity = 1.0
             
-            imageBeHereNow.layer.position = imageDestinationArea.center
+            let fromPoint: CGPoint = imageBeHereNow.center
+            let toPoint: CGPoint = imageDestinationArea.center
+            positonAnimationFromPoint(fromPoint, toPoint: toPoint)
             
-//          他のアニメーション方法の検討残骸
-//            let positonAnimation: CABasicAnimation = CABasicAnimation(keyPath: "position")
-//            let fromPoint: CGPoint = imageBeHereNow.center
-//            let toPoint: CGPoint = imageDestinationArea.center
-//            positonAnimation.fromValue = NSValue(CGPoint: fromPoint)    // アニメーションのスタート座標
-//            positonAnimation.toValue = NSValue(CGPoint: toPoint)        // アニメーションの終了位置
-//            positonAnimation.repeatCount = 1                            // アニメーションの繰り返し回数
-//            positonAnimation.duration = 0.01                            // アニメーション時間
-//            positonAnimation.beginTime = CACurrentMediaTime() + 0     // アニメーションの開始時間を指定
-//            imageBeHereNow.layer.addAnimation(positonAnimation, forKey: "move-layer")   // アニメーション実行
-//            
-//            imageBeHereNow.center = imageDestinationArea.center         // イメージを移動*/
+            imageBeHereNow.center = imageDestinationArea.center         // イメージを移動
 
         } else {
-            // Do nothing
             // アニメーションでスタートAreaに吸着させる
             println("perform animation to imageSourceArea")
+            imageBeHereNow.layer.opacity = 1.0
+
+            let fromPoint: CGPoint = imageBeHereNow.center
+            let toPoint: CGPoint = imageSourceArea.center
+            positonAnimationFromPoint(fromPoint, toPoint: toPoint)
+ 
+            imageBeHereNow.center = imageSourceArea.center              // イメージを移動
         }
         
-
-        
     }
+    
+    func positonAnimationFromPoint(fromPoint: CGPoint!, toPoint: CGPoint!) {
+        let positonAnimation: CABasicAnimation = CABasicAnimation(keyPath: "position")
+        positonAnimation.fromValue = NSValue(CGPoint: fromPoint)    // アニメーションのスタート座標
+        positonAnimation.toValue = NSValue(CGPoint: toPoint)        // アニメーションの終了位置
+        positonAnimation.repeatCount = 1                            // アニメーションの繰り返し回数
+        positonAnimation.duration = 0.1                             // アニメーション時間
+        positonAnimation.beginTime = CACurrentMediaTime() + 0       // アニメーションの開始時間を指定
+        positonAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)  // アニメーション速度の変化を指定
+        imageBeHereNow.layer.addAnimation(positonAnimation, forKey: "move-layer")                           // アニメーション実行
+    }
+    
     
     override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
         println("\(__FUNCTION__) is called!!!")
